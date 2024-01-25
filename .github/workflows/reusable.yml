@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-    deploy:
+    deployViaReuse:
         runs-on: ubuntu-latest
         steps:
             - name: Get Code

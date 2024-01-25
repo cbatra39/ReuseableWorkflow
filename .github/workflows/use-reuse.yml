@@ -1,4 +1,4 @@
-name: Website Deployment
+name: Website Deployment(Reuse)
 on: workflow_dispatch
 jobs:
   lint:
