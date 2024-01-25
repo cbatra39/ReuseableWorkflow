@@ -16,7 +16,7 @@ on:
 jobs:
     deployViaReuse:
         outputs: 
-            outcome: ${{steps.set-result.outputs.step-results }}
+            outcome: ${{steps.set-result.outputs.step-result }}
         runs-on: ubuntu-latest
         steps:
             - name: Get Code
