@@ -63,3 +63,9 @@ jobs:
     uses: ./.github/workflows/reusable.yml
     with:
       artifact-name: dist-files
+  print-deploy-result:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing Deploy results
+        run: echo "${{needs.deploy.outputs.result}}"
